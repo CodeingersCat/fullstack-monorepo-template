@@ -1,0 +1,7 @@
+{
+    "compiler": {
+        "strict": true,
+        "esmoduleinterop": true,
+        "skipLibCheck": true
+    }
+}

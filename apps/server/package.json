@@ -1,19 +1,21 @@
 {
-    "type": "module",
-    "name": "server",
-    "version": "1.0.0",
-    "scripts": {
-        "dev": "ts-node index.ts",
-        "test": "vitest",
-        "test:watch": "vitest:watch"
-    },
-    "dependencies": {
-        "fastify": "^5.7.2"
-    },
-    "devDependencies": {
-        "@types/node": "^25.1.0",
-        "ts-node": "^10.9.2",
-        "typescript": "^5.9.3",
-        "vitest": "^4.0.18"
-    }
+  "type": "module",
+  "name": "server",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "test": "vitest",
+    "test:watch": "vitest:watch"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "fastify": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.1.0",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
 }

@@ -1,0 +1,14 @@
+{
+    "compiler": {
+        "rootDir": "./src",
+        "target": "ESNext",
+        "module": "Node",
+        "moduleResolution": "Node",
+        "types": "node",
+        "allowImportingTsExtensions": true
+    },
+    "ts-node": {
+        "esm": true,
+        "experimentalSpecifierResolution": "node"
+    }
+}

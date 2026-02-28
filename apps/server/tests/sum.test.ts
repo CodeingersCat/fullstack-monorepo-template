@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { getServer } from "../src";
+import { getServer } from "../src/index.ts";
 
 test('GET / should return the sum of the numbers', async () => {
     const server = getServer();

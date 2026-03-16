@@ -1,21 +1,17 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "skipLibCheck": true,
     "module": "ESNext",
-    "moduleResolution": "bundler",
-    "target": "ESNext",
-    "isolatedModules": true,
+    "moduleResolution": "Node",
     "esModuleInterop": true,
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
     "outDir": "./dist",
+    "noEmit": false,
     "lib": [
       "ESNext"
     ],
     "types": [
       "node"
     ],
-    "baseUrl": "./",
   },
   "include": [
     "src/**/*",

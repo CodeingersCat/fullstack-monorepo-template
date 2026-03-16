@@ -1,6 +1,6 @@
 import Fastify, { type FastifyInstance, type FastifyServerOptions } from 'fastify';
 import cors from '@fastify/cors';
-import { add } from "./utils.ts"
+import { add } from "./utils.js"
 
 function routesInit(server: FastifyInstance) {
   server.get('/', (_req, res) => {
@@ -16,7 +16,7 @@ function routesInit(server: FastifyInstance) {
   server.post('/sum', (req, res) => {
     const { a, b } = req.body as { a: number, b: number };
     const ans = add(a, b);
-    console.log(a, b)
+    console.log(a, b);
     server.log.info(ans)
     res.send(ans);
   })

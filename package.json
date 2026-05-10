@@ -4,13 +4,35 @@
   "version": "1.0.0",
   "description": "Production ready fullstack typescript monorepo template",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+
+    "api:test": "pnpm --filter server run test",
+    "api:test:watch": "pnpm --filter server run test:watch",
+
     "client": "pnpm --filter client run dev",
-    "dev:server": "pnpm --filter server run dev",
-    "server:test": "pnpm --filter server run test",
-    "server:test:watch": "pnpm --filter server run test:watch"
+    "api": "pnpm --filter server run dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.17.1"
+  "packageManager": "pnpm@10.17.1",
+  "devDependencies": {
+    "@eslint/css": "^1.0.0",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^1.2.0",
+    "@eslint/markdown": "^8.0.0",
+    "eslint": "^10.1.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^17.4.0",
+    "prettier": "3.8.1",
+    "typescript-eslint": "^8.57.2"
+  }
 }

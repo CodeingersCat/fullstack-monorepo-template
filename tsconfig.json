@@ -3,17 +3,14 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "target": "ESNext",
+    "target": "ESNext"
   },
   "references": [
     {
-      "path": "app/client"
+      "path": "apps/client"
     },
     {
       "path": "apps/server"
-    },
-    {
-      "path": "packages/shared"
-    },
+    }
   ]
 }

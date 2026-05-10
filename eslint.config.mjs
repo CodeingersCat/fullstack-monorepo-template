@@ -100,6 +100,11 @@ export default defineConfig([
   {
     plugins: { prettier: prettierPlugin },
     files: ['**/*.{js,mjs,cjs,ts,tsx}'],
+    settings: {
+      prettier: {
+        configFile: '.prettierrc'
+      }
+    },
     extends: [prettierConfig],
     rules: {
       'prettier/prettier': 'error'

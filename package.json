@@ -8,10 +8,9 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
-
-    "api:test": "pnpm --filter server run test",
-    "api:test:watch": "pnpm --filter server run test:watch",
-
+    "test:api": "pnpm --filter server run test",
+    "test:api:watch": "pnpm --filter server run test:watch",
+    "test": "pnpm test:api",
     "client": "pnpm --filter client run dev",
     "api": "pnpm --filter server run dev"
   },

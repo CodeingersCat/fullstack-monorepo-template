@@ -11,6 +11,9 @@ jobs:
       - name: 'Checkout code'
         uses: actions/checkout@v6
 
+      - name: 'Install pnpm'
+        uses: pnpm/action-setup@v6
+
       - name: 'Setup Nodejs'
         uses: actions/setup-node@v6
         with:
